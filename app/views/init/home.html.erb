@@ -1,6 +1,12 @@
 <% provide(:title, "Home") %>
-<h1>Sample Home</h1>
-<p>
-  転職用ポートフォリオ（YourNovels(仮））のホーム画面です。
-  誰でも投稿、閲覧、評価が出来るSNS型小説サイトを作ります。
-</p>
+<div class="center jumbotron">
+  <h1>Sample Home</h1>
+  <h2>
+    転職用ポートフォリオ（YourNovels(仮））のホーム画面です。
+    誰でも投稿、閲覧、評価が出来るSNS型小説サイトを作ります。
+  </h2>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  
+</div>
+<%= link_to image_tag("novel.png", alt: "Novel logo")%>
+  

@@ -12,15 +12,21 @@ class InitControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get help" do
-    get init_help_path
+    get help_path
     assert_response :success
     assert_select "title", "Help | #{@base_title}"
   end
 
   test "should get about" do
-    get init_about_path
+    get about_path
     assert_response :success
     assert_select "title", "About | #{@base_title}"
+  end
+
+  test "should get contact" do
+    get contact_path
+    assert_response :success
+    assert_select "title", "Contact | #{@base_title}"
   end
 
 end
