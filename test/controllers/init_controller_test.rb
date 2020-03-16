@@ -2,12 +2,17 @@ require 'test_helper'
 
 class InitControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get init_home_url
+    get root_path
     assert_response :success
   end
 
   test "should get help" do
-    get init_help_url
+    get init_help_path
+    assert_response :success
+  end
+
+  test "should get about" do
+    get init_about_path
     assert_response :success
   end
 
